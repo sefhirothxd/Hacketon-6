@@ -1,0 +1,272 @@
+/*import*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding-right: 20px;
+}
+
+.article__title {
+  margin-bottom: 20px;
+  line-height: 36px;
+  font-size: 2rem;
+}
+
+.article__paragraph {
+  font-size: 0.8rem;
+  opacity: 0.7;
+  line-height: 26px;
+  margin-bottom: 20px;
+}
+
+.article__details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.article__details--title {
+  font-size: 0.8rem;
+  color: #1F3F68;
+  font-weight: bolder;
+}
+
+.article__details--subtitle {
+  color: #999999;
+  opacity: 0.8;
+}
+
+.article__details__container-icon img {
+  width: 30px;
+}
+
+/* Variables y mixins*/
+/*color*/
+/*fondo*/
+/*font*/
+/*Mixin*/
+/*-------------------------------------------------------------------------------*/
+/*Selectores universales*/
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  font-size: 62.5%;
+  color: #000000;
+}
+
+main {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 960px;
+}
+
+h1 {
+  margin-bottom: 20px;
+  letter-spacing: 0.04em;
+}
+
+h2 {
+  font-weight: bold;
+  letter-spacing: 0.05em;
+}
+
+h3 {
+  color: #1F3F68;
+  font-weight: bold;
+  letter-spacing: 0.04em;
+}
+
+p {
+  line-height: 26px;
+  letter-spacing: 0.05em;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+/*header*/
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 20px;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__nav-link ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header__nav-link ul li a {
+  text-decoration: none;
+  margin-right: 20px;
+  color: #000000;
+}
+
+/*banner*/
+.banner-container {
+  position: relative;
+}
+
+.banner-container__img {
+  display: block;
+  width: 100%;
+}
+
+.banner-container__details {
+  position: absolute;
+  text-align: center;
+  bottom: 40%;
+  width: 100%;
+  color: #FFFFFF;
+}
+
+.banner-container__details-title-main {
+  font-size: 3rem;
+  margin-bottom: 30px;
+}
+
+.banner-container__details-p {
+  font-size: 1.3rem;
+  line-height: 30px;
+  opacity: 0.7;
+  letter-spacing: 0.2rem;
+}
+
+/*contenido principal*/
+.container-busqueda {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #F4F4F4;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  justify-items: center;
+  width: 100%;
+  border: 1px solid #FFFFFF;
+  border-radius: 10px;
+  padding: 5px;
+  margin: 20px 0;
+}
+
+.container-busqueda img {
+  width: 20px;
+}
+
+.container-busqueda__input {
+  border: transparent;
+  background: transparent;
+  outline: none;
+  padding-left: 20px;
+  width: 100%;
+}
+
+/*seccion artiuculo populares*/
+.container-popular {
+  margin-bottom: 50px;
+}
+
+.container-popular__grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+}
+
+.container-popular__grid .firstpost {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: 1 / 1 / span 2 / span 3;
+}
+/*# sourceMappingURL=main.css.map */

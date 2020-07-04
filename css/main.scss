@@ -1,0 +1,155 @@
+/*import*/
+@import "../styles/reset";
+@import "../styles/article";
+
+/* Variables y mixins*/
+/*color*/
+$color : (
+    color-primary: #1F3F68,
+    color-secundary: #000000,
+    color-third: #FFFFFF,
+    color-fourth: #356EAD
+);
+
+/*fondo*/
+$boton-backcolor: #5A98D0;
+$footer-backcolor: #316099;
+$busqueda-backcolor: #F4F4F4;
+
+/*font*/
+$font:(
+    font-title: 'Roboto',
+    font-p: Arial
+);
+/*Mixin*/
+
+
+/*-------------------------------------------------------------------------------*/
+/*Selectores universales*/
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: map-get($font, font-p);
+    font-size: 62.5%;
+    color: map-get($color, color-secundary);
+}
+
+main{
+    margin: 0 auto;
+    width: 100%;
+    max-width: 960px;
+}
+
+h1{
+    margin-bottom: 20px;
+    letter-spacing: 0.04em;
+}
+h2{
+    font-weight: bold;
+    letter-spacing: 0.05em;
+}
+
+h3{
+    color: map-get($color, color-primary);
+    font-weight: bold;
+    letter-spacing: 0.04em;
+}
+p{
+    line-height: 26px;
+    letter-spacing: 0.05em;
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    display: block;
+    width: 100%;
+}
+
+/*header*/
+.header{
+    display: flex;
+    padding: 20px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    &__nav-link ul{
+        display: flex;
+        li a{
+            text-decoration: none;
+            margin-right: 20px;
+            color:map-get($color, color-secundary);
+        }
+    }
+}
+
+/*banner*/
+.banner-container{
+    position: relative;
+    &__img{
+        display: block;
+        width: 100%;
+    }
+    &__details{
+        position: absolute;
+        text-align: center;
+        bottom: 40%;
+        width: 100%;
+        color:map-get($color, color-third);
+        &-title-main{
+            font-size: 3rem;
+            margin-bottom: 30px;
+        }
+        &-p{
+            font-size: 1.3rem;
+            line-height: 30px;
+            opacity: 0.7;
+            letter-spacing: 0.2rem;
+        }
+    }
+
+}
+
+/*contenido principal*/
+.container-busqueda{
+    display: flex;
+    background: $busqueda-backcolor;
+    justify-content: flex-start;
+    justify-items: center;
+    width: 100%;
+    border: 1px solid map-get($color, color-third);
+    border-radius: 10px;
+    padding: 5px;
+    margin: 20px 0;
+    & img{
+        width: 20px;
+    }
+    &__input{
+        border: transparent;
+        background: transparent;
+        outline: none;
+        padding-left: 20px;
+        width: 100%;
+    }
+}
+
+/*seccion artiuculo populares*/
+
+.container-popular{
+    margin-bottom: 50px;
+    &__grid{
+        display: grid;
+        grid-template-columns:repeat(3, 1fr);
+        grid-gap: 10px;
+        .firstpost{
+            display: flex;
+            grid-area: 1 / 1 / span 2 / span 3;
+        }
+    }
+}
+
+
