@@ -1,74 +1,11 @@
 /*import*/
+@import "../styles/variables";
 @import "../styles/reset";
+@import "../styles/globales";
 @import "../styles/article";
 
-/* Variables y mixins*/
-/*color*/
-$color : (
-    color-primary: #1F3F68,
-    color-secundary: #000000,
-    color-third: #FFFFFF,
-    color-fourth: #356EAD
-);
 
-/*fondo*/
-$boton-backcolor: #5A98D0;
-$footer-backcolor: #316099;
-$busqueda-backcolor: #F4F4F4;
-
-/*font*/
-$font:(
-    font-title: 'Roboto',
-    font-p: Arial
-);
 /*Mixin*/
-
-
-/*-------------------------------------------------------------------------------*/
-/*Selectores universales*/
-*{
-    box-sizing: border-box;
-}
-
-body{
-    font-family: map-get($font, font-p);
-    font-size: 62.5%;
-    color: map-get($color, color-secundary);
-}
-
-main{
-    margin: 0 auto;
-    width: 100%;
-    max-width: 960px;
-}
-
-h1{
-    margin-bottom: 20px;
-    letter-spacing: 0.04em;
-}
-h2{
-    font-weight: bold;
-    letter-spacing: 0.05em;
-}
-
-h3{
-    color: map-get($color, color-primary);
-    font-weight: bold;
-    letter-spacing: 0.04em;
-}
-p{
-    line-height: 26px;
-    letter-spacing: 0.05em;
-}
-
-a{
-    text-decoration: none;
-}
-
-img{
-    display: block;
-    width: 100%;
-}
 
 /*header*/
 .header{
@@ -141,15 +78,34 @@ img{
 
 .container-popular{
     margin-bottom: 50px;
+    border-bottom: 1px solid map-get($color , color-secundary);
+    padding-bottom: 20px;
+    &__firstpost{
+        display: flex;
+        margin-bottom: 20px;
+        &__articulo{
+            width: percentage(5/12);
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            padding-right: 10px;
+        }
+        figure{
+            width: percentage(7/12);
+            padding-left: 10px;
+        }
+
+    }
     &__grid{
         display: grid;
         grid-template-columns:repeat(3, 1fr);
-        grid-gap: 10px;
-        .firstpost{
-            display: flex;
-            grid-area: 1 / 1 / span 2 / span 3;
-        }
+        grid-column-gap: 20px;
+        margin-bottom: 50px;
     }
+    &__seeall{
+        text-align: right;
+    }
+
 }
 
 

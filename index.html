@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,70 +11,76 @@
 </head>
 
 <body>
-    <div class="container-principal">
-        <header class="header">
-            <a href="#" class="header__logo">
-                <img src="image/logo-footer.png" alt="">
-            </a>
-            <nav class="header__nav-link">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Espectaculo</a></li>
-                    <li><a href="#">Deportes</a></li>
-                </ul>
-            </nav>
-        </header>
+    <header class="header">
+        <a href="#" class="header__logo">
+            <img src="image/logo-footer.png" alt="">
+        </a>
+        <nav class="header__nav-link">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Espectaculo</a></li>
+                <li><a href="#">Deportes</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main">
         <div class="banner">
             <section class="banner-container">
                 <img class="banner-container__img" src="image/banner.png" alt="">
                 <div class="banner-container__details">
                     <h1 class="banner-container__details-title-main">Blog Afrianska</h1>
-                    <p class="banner-container__details-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor <br> incididunt ut labore et dolore magna aliqua.</p>
+                    <p class="banner-container__details-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                        do eiusmod tempor <br> incididunt ut labore et dolore magna aliqua.</p>
                 </div>
             </section>
         </div>
-        <main class="main">
+        <div class="container">
             <div class="container-busqueda">
-                <img src="https://img.icons8.com/material-sharp/24/000000/search.png"/>
+                <img src="https://img.icons8.com/material-sharp/24/000000/search.png" />
                 <input class="container-busqueda__input" type="text" placeholder="Search Article">
             </div>
             <section class="container-popular">
                 <h3>POPULAR</h3>
-                <div class="container-popular__grid">
-                    <div class="firstpost">
+                <div class="container-popular__firstpost">
+                    <div class="container-popular__firstpost__articulo">
                         <article class="article">
                             <h2 class="article__title">Feugiat sodales at nullam tellus.</h2>
-                            <p class="article__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                            Mi posuere nibh tempor fringilla porta pellentesque ipsum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                            <div class="article__details">
-                                <p class="article__details--title">Samatha Leuthex <br>
-                                <span class="article__details--subtitle">May 5, 3 min read </span>
-                                </p>
-                                <div class="article__details__container-icon">
-                                    <img src="https://img.icons8.com/color/48/000000/mark-as-favorite.png"/>
-                                    <img src="https://img.icons8.com/color/48/000000/share.png"/>
-                                </div>
-                            </div>
+                            <p class="article__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                                do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                Mi posuere nibh tempor fringilla porta pellentesque ipsum. Lorem ipsum dolor sit amet,
+                                consectetur adipiscing elit,
+                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                         </article>
-                        <figure>
-                            <img class="img-post" src="image/img-post-1.png" alt="">
-                        </figure>
+                        <div class="article__details">
+                            <p class="article__details--title">Samatha Leuthex <br>
+                                <span class="article__details--subtitle">May 5, 3 min read </span>
+                            </p>
+                            <div class="article__details__container-icon">
+                                <img src="https://img.icons8.com/color/48/000000/mark-as-favorite.png" />
+                                <img src="https://img.icons8.com/color/48/000000/share.png" />
+                            </div>
+                        </div>
                     </div>
+                    <figure>
+                        <img class="img-post" src="image/img-post-1.png" alt="">
+                    </figure>
+                </div>
+                <div class="container-popular__grid">
                     <div class="secondpost">
                         <figure>
-                            <img  class="img-post" src="image/img-post-2.png" alt="">
+                            <img class="img-post" src="image/img-post-2.png" alt="">
                         </figure>
                         <article class="article">
                             <h3 class="article__title">Porta proin tellus sed pulvinar odio eu pulvinar. </h3>
-                            <p class="article__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <p class="article__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                                do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                             <div class="article__details">
                                 <p class="article__details--title">Samatha Leuthex <br>
-                                <span class="article__details--subtitle">May 5, 3 min read </span>
+                                    <span class="article__details--subtitle">May 5, 3 min read </span>
                                 </p>
                                 <div class="container-icon">
-                                    <img src="https://img.icons8.com/color/48/000000/mark-as-favorite.png"/>
-                                    <img src="https://img.icons8.com/color/48/000000/share.png"/>
+                                    <img src="https://img.icons8.com/color/48/000000/mark-as-favorite.png" />
+                                    <img src="https://img.icons8.com/color/48/000000/share.png" />
                                 </div>
                             </div>
                         </article>
@@ -84,41 +91,42 @@
                         </figure>
                         <article class="article">
                             <h3 class="article__title">Non quam tortor, proin eu egestas scelerisque.</h3>
-                            <p class="article__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <p class="article__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                                do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                             <div class="article__details">
                                 <p class="article__details--title">Samatha Leuthex <br>
-                                <span class="article__details--subtitle">May 5, 3 min read </span>
+                                    <span class="article__details--subtitle">May 5, 3 min read </span>
                                 </p>
                                 <div class="container-icon">
-                                    <img src="https://img.icons8.com/color/48/000000/mark-as-favorite.png"/>
-                                    <img src="https://img.icons8.com/color/48/000000/share.png"/>
+                                    <img src="https://img.icons8.com/color/48/000000/mark-as-favorite.png" />
+                                    <img src="https://img.icons8.com/color/48/000000/share.png" />
                                 </div>
                             </div>
                         </article>
                     </div>
                     <div class="fourthpost">
                         <figure>
-                            <img  class="img-post" src="image/img-post-3 (1).png" alt="">
+                            <img class="img-post" src="image/img-post-3 (1).png" alt="">
                         </figure>
                         <article class="article">
                             <h3 class="article__title">Amet amet sed pharetra risus sit eget interdum.</h3>
-                            <p class="article__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <p class="article__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                                do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                             <div class="article__details">
                                 <p class="article__details--title">Samatha Leuthex <br>
-                                <span class="article__details--subtitle">May 5, 3 min read </span>
+                                    <span class="article__details--subtitle">May 5, 3 min read </span>
                                 </p>
                                 <div class="container-icon">
-                                    <img src="https://img.icons8.com/color/48/000000/mark-as-favorite.png"/>
-                                    <img src="https://img.icons8.com/color/48/000000/share.png"/>
+                                    <img src="https://img.icons8.com/color/48/000000/mark-as-favorite.png" />
+                                    <img src="https://img.icons8.com/color/48/000000/share.png" />
                                 </div>
                             </div>
                         </article>
                     </div>
                 </div>
-                <div class="container-seeall">
-                    <h3 class="seeall">See All Popular Article </h3>
+                <div class="container-popular__seeall">
+                    <a href="#">See All Poular Article</a>
                 </div>
-                <hr>
             </section>
             <section class="cantainer__allarticle">
                 <h3>ALL ARTICLE</h3>
@@ -129,15 +137,16 @@
                         </figure>
                         <article class="article__details">
                             <h3 class="post__subtitle">Massa eu in laoreet enim augue vulputate nunc. </h3>
-                            <p class="post__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                            Lectus quisque magna in nisl nibh bibendum ipsum, elit duis. Donec.</p>
+                            <p class="post__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                Lectus quisque magna in nisl nibh bibendum ipsum, elit duis. Donec.</p>
                             <div class="post__details">
                                 <p class="details--title">Samatha Leuthex <br>
-                                <span class="details--subtitle">May 5, 3 min read </span>
+                                    <span class="details--subtitle">May 5, 3 min read </span>
                                 </p>
                                 <div class="container-icon">
-                                    <img src="https://img.icons8.com/color/48/000000/mark-as-favorite.png"/>
-                                    <img src="https://img.icons8.com/color/48/000000/share.png"/>
+                                    <img src="https://img.icons8.com/color/48/000000/mark-as-favorite.png" />
+                                    <img src="https://img.icons8.com/color/48/000000/share.png" />
                                 </div>
                             </div>
                         </article>
@@ -148,15 +157,16 @@
                         </figure>
                         <article class="article__details">
                             <h3 class="post__subtitle">Feugiat a euismod arcu feugiat posuere morbi. </h3>
-                            <p class="post__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                            Lectus quisque magna in nisl nibh bibendum ipsum, elit duis. Donec.</p>
+                            <p class="post__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                Lectus quisque magna in nisl nibh bibendum ipsum, elit duis. Donec.</p>
                             <div class="post__details">
                                 <p class="details--title">Samatha Leuthex <br>
-                                <span class="details--subtitle">May 5, 3 min read </span>
+                                    <span class="details--subtitle">May 5, 3 min read </span>
                                 </p>
                                 <div class="container-icon">
-                                    <img src="https://img.icons8.com/color/48/000000/mark-as-favorite.png"/>
-                                    <img src="https://img.icons8.com/color/48/000000/share.png"/>
+                                    <img src="https://img.icons8.com/color/48/000000/mark-as-favorite.png" />
+                                    <img src="https://img.icons8.com/color/48/000000/share.png" />
                                 </div>
                             </div>
                         </article>
@@ -167,15 +177,16 @@
                         </figure>
                         <article class="article__details">
                             <h3 class="post__subtitle">Sociis purus pellentesque faucibus vitae et felis.</h3>
-                            <p class="post__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                            Lectus quisque magna in nisl nibh bibendum ipsum, elit duis. Donec.</p>
+                            <p class="post__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                Lectus quisque magna in nisl nibh bibendum ipsum, elit duis. Donec.</p>
                             <div class="post__details">
                                 <p class="details--title">Samatha Leuthex <br>
-                                <span class="details--subtitle">May 5, 3 min read </span>
+                                    <span class="details--subtitle">May 5, 3 min read </span>
                                 </p>
                                 <div class="container-icon">
-                                    <img src="https://img.icons8.com/color/48/000000/mark-as-favorite.png"/>
-                                    <img src="https://img.icons8.com/color/48/000000/share.png"/>
+                                    <img src="https://img.icons8.com/color/48/000000/mark-as-favorite.png" />
+                                    <img src="https://img.icons8.com/color/48/000000/share.png" />
                                 </div>
                             </div>
                         </article>
@@ -186,15 +197,16 @@
                         </figure>
                         <article class="article__details">
                             <h3 class="post__subtitle">Cursus feugiat mi pellentesque mauris sed eu.</h3>
-                            <p class="post__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                            Lectus quisque magna in nisl nibh bibendum ipsum, elit duis. Donec.</p>
+                            <p class="post__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                Lectus quisque magna in nisl nibh bibendum ipsum, elit duis. Donec.</p>
                             <div class="post__details">
                                 <p class="details--title">Samatha Leuthex <br>
-                                <span class="details--subtitle">May 5, 3 min read </span>
+                                    <span class="details--subtitle">May 5, 3 min read </span>
                                 </p>
                                 <div class="container-icon">
-                                    <img src="https://img.icons8.com/color/48/000000/mark-as-favorite.png"/>
-                                    <img src="https://img.icons8.com/color/48/000000/share.png"/>
+                                    <img src="https://img.icons8.com/color/48/000000/mark-as-favorite.png" />
+                                    <img src="https://img.icons8.com/color/48/000000/share.png" />
                                 </div>
                             </div>
                         </article>
@@ -205,15 +217,16 @@
                         </figure>
                         <article class="article__details">
                             <h3 class="post__subtitle">A morbi arcu curabitur etiam fringilla augue.</h3>
-                            <p class="post__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                            Lectus quisque magna in nisl nibh bibendum ipsum, elit duis. Donec.</p>
+                            <p class="post__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                Lectus quisque magna in nisl nibh bibendum ipsum, elit duis. Donec.</p>
                             <div class="post__details">
                                 <p class="details--title">Samatha Leuthex <br>
-                                <span class="details--subtitle">May 5, 3 min read </span>
+                                    <span class="details--subtitle">May 5, 3 min read </span>
                                 </p>
                                 <div class="container-icon">
-                                    <img src="https://img.icons8.com/color/48/000000/mark-as-favorite.png"/>
-                                    <img src="https://img.icons8.com/color/48/000000/share.png"/>
+                                    <img src="https://img.icons8.com/color/48/000000/mark-as-favorite.png" />
+                                    <img src="https://img.icons8.com/color/48/000000/share.png" />
                                 </div>
                             </div>
                         </article>
@@ -221,57 +234,62 @@
                 </div>
                 <div class="container-arrow">
                     <figure class="arrow-left">
-                        <img src="https://img.icons8.com/officel/30/000000/arrow-pointing-left.png"/>
+                        <img src="https://img.icons8.com/officel/30/000000/arrow-pointing-left.png" />
                         <p>Old Post</p>
                     </figure>
                     <figure class="arrow-right">
                         <p>New Post</p>
-                        <img src="https://img.icons8.com/officel/30/000000/arrow.png"/>
+                        <img src="https://img.icons8.com/officel/30/000000/arrow.png" />
                     </figure>
                 </div>
             </section>
-        </main>
-        <footer class="footer">
-            <section class="footer__container-part1">
-                <article class="footer__container-article">
-                    <h2>Intersted to woek <br> with our team?</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,<br>sed do eiusmod tempor incididunt ut labore et dolore <br>magna aliqua. Ut enim ad minim veniam.</p>
-                </article>
-                <button>Let’s Talk</button>
+        </div>
+    </main>
+    <footer class="footer">
+        <section class="footer__container-part1">
+            <article class="footer__container-article">
+                <h2>Intersted to woek <br> with our team?</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,<br>sed do eiusmod tempor incididunt ut
+                    labore et dolore <br>magna aliqua. Ut enim ad minim veniam.</p>
+            </article>
+            <button>Let’s Talk</button>
+        </section>
+        <hr>
+        <section class="footer__container-part2">
+            <section class="columna">
+                <ul>
+                    <li><img src="image/logo-footer.png" alt="">
+                        <h2>Afrianska</h2>
+                    </li>
+                    <li class="second-line"><span>A.</span>Lorem ipsum dolor sit amet,<br> consectetur adipisicing elit.
+                    </li>
+                    <li><span>T.</span>+62-812-7313-4321</li>
+                    <li><span>E</span>hello.afrian@gmail.com</li>
+                </ul>
             </section>
-            <hr>
-            <section class="footer__container-part2">
-                <section class="columna">
-                   <ul>
-                        <li><img src="image/logo-footer.png" alt=""><h2>Afrianska</h2></li>
-                        <li class="second-line"><span>A.</span>Lorem ipsum dolor sit amet,<br> consectetur adipisicing elit.</li>
-                        <li><span>T.</span>+62-812-7313-4321</li>
-                        <li><span>E</span>hello.afrian@gmail.com</li>
-                   </ul>
-                </section>
-                <section class="columna">
-                    <ul>
-                        <li class="footer-subtitle">About us</li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">What We Do</a></li>
-                        <li><a href="#">Project</a></li>
-                        <li><a href="#">How It Work With Us</a></li>
-                    </ul>
-                </section>
-                <section class="columna">
-                    <ul>
-                        <li class="footer-subtitle"><a href="">Follow US</a></li>
-                        <li><a href="#">instagram</a></li>
-                        <li><a href="#">Facebook</a></li>
-                        <li><a href="#">Linkedln</a></li>
-                        <li><a href="#">youtube</a></li>
-                    </ul>
-                </section>
+            <section class="columna">
+                <ul>
+                    <li class="footer-subtitle">About us</li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">What We Do</a></li>
+                    <li><a href="#">Project</a></li>
+                    <li><a href="#">How It Work With Us</a></li>
+                </ul>
             </section>
-            <div class="container-reseved">
-                <p>2019 © Afrianska. All rights reserved.</p>
-            </div>
-        </footer>
-    </div>
+            <section class="columna">
+                <ul>
+                    <li class="footer-subtitle"><a href="">Follow US</a></li>
+                    <li><a href="#">instagram</a></li>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Linkedln</a></li>
+                    <li><a href="#">youtube</a></li>
+                </ul>
+            </section>
+        </section>
+        <div class="container-reseved">
+            <p>2019 © Afrianska. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
+
 </html>

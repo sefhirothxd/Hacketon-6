@@ -1,0 +1,49 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: map-get($font, font-p);
+    font-size: map-get($font-size, base);
+    color: map-get($color, color-secundary);
+}
+
+.container{
+    margin: 0 auto;
+    width: 100%;
+    max-width: 960px;
+}
+
+h1{
+    margin-bottom: 20px;
+    letter-spacing: 0.04em;
+}
+h2{
+    font-weight: bold;
+    letter-spacing: 0.05em;
+    font-size: map-get($font-size, h2 );
+}
+
+h3{
+    color: map-get($color, color-primary);
+    font-weight: bold;
+    letter-spacing: 0.04em;
+
+}
+p{
+    line-height: 26px;
+    letter-spacing: 0.05em;
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    display: block;
+    width: 100%;
+}

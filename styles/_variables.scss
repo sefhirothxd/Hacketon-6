@@ -1,0 +1,27 @@
+/* Variables y mixins*/
+/*color*/
+$color : (
+    color-primary: #1F3F68,
+    color-secundary: #000000,
+    color-third: #FFFFFF,
+    color-fourth: #356EAD
+);
+
+/*fondo*/
+$boton-backcolor: #5A98D0;
+$footer-backcolor: #316099;
+$busqueda-backcolor: #F4F4F4;
+
+/*font*/
+$font-size:(
+    base: 1.6rem,
+    h2: 3.6rem,
+    h3: 2.2rem,
+    time: 1.4rem
+    
+);
+
+$font:(
+    font-title: 'Roboto',
+    font-p: Arial
+);
