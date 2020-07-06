@@ -147,7 +147,7 @@ img {
 }
 
 .article__details--title {
-  font-size: 0.8rem;
+  font-size: 1.4rem;
   color: #1F3F68;
   font-weight: bolder;
 }
@@ -217,12 +217,12 @@ img {
 }
 
 .banner-container__details-title-main {
-  font-size: 3rem;
+  font-size: 4.4rem;
   margin-bottom: 30px;
 }
 
 .banner-container__details-p {
-  font-size: 1.3rem;
+  font-size: 2rem;
   line-height: 30px;
   opacity: 0.7;
   letter-spacing: 0.2rem;
@@ -302,5 +302,21 @@ img {
 
 .container-popular__seeall {
   text-align: right;
+}
+
+.container-list__all {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container-list__all .all-article {
+  width: 100%;
+}
+
+.container-list.container-arrow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 /*# sourceMappingURL=main.css.map */

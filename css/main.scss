@@ -38,11 +38,11 @@
         width: 100%;
         color:map-get($color, color-third);
         &-title-main{
-            font-size: 3rem;
+            font-size: map-get($font-size, title);
             margin-bottom: 30px;
         }
         &-p{
-            font-size: 1.3rem;
+            font-size: map-get($font-size, subtitle);
             line-height: 30px;
             opacity: 0.7;
             letter-spacing: 0.2rem;
@@ -105,7 +105,22 @@
     &__seeall{
         text-align: right;
     }
-
 }
+
+.container-list{
+
+    &__all{
+        display: flex;
+        .all-article{
+            width: 100%;
+        }
+    }
+    &.container-arrow{
+        display: flex;
+    }
+}
+
+
+
 
 
