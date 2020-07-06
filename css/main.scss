@@ -108,19 +108,33 @@
 }
 
 .container-list{
-
+    margin-bottom: 50px;
+    padding-bottom: 20px;
     &__all{
         display: flex;
+        flex-wrap: wrap;
         .all-article{
-            width: 100%;
-        }
-    }
-    &.container-arrow{
-        display: flex;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            figure{
+                width:100%;
+                margin-right: 20px;
+            }
     }
 }
+}
 
-
-
-
-
+.container-arrow{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    figure{
+        display: flex;
+        figure img{
+            width: 20px;
+        }
+    }
+    
+}
