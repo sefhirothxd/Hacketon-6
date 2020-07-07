@@ -80,6 +80,12 @@
     margin-bottom: 50px;
     border-bottom: 1px solid map-get($color , color-secundary);
     padding-bottom: 20px;
+    h3{
+        color: map-get($color, color-fourth);
+        font-size: map-get($font-size, subtitle);
+        margin-bottom: 30px;
+        opacity: 0.8;
+    }
     &__firstpost{
         display: flex;
         margin-bottom: 20px;
@@ -89,6 +95,11 @@
             justify-content: space-between;
             flex-direction: column;
             padding-right: 10px;
+        }
+        .article{
+            &__title{
+                font-size: map-get($font-size, h2);
+            }
         }
         figure{
             width: percentage(7/12);
@@ -104,6 +115,12 @@
     }
     &__seeall{
         text-align: right;
+        a{
+        color: map-get($color, color-fourth);
+        font-size: map-get($font-size, base);
+        font-weight: bold;
+        opacity: 0.8;
+        }
     }
 }
 
@@ -130,11 +147,70 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    figure{
+    &-left{
         display: flex;
-        figure img{
+        align-items: center;
+        img{
             width: 20px;
+            margin-right: 20px;
+        }
+        p{
+            font-size: map-get($font-size, base);
         }
     }
-    
+    &-right{
+        display: flex;
+        align-items: center;
+        img{
+            width: 20px;
+            margin-left: 20px;
+        }
+        p{
+            font-size: map-get($font-size, base);
+        }
+    }
+}
+
+.footercontainer{
+    background-color: $footer-backcolor;
+    border-top-right-radius: 30%;
+    width: 100%;
+    &__part1{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 20px 30px;
+        border-bottom: 1px solid map-get($color, color-third);
+        &__article{
+            h2{
+                font-size: map-get($font-size, h2);
+                color: map-get($color, color-third);
+                margin-bottom: 20px;
+                font-family: map-get($font, font-title);
+                font-weight: normal;
+            }
+            p{
+                font-size: map-get($font-size, base);
+                color: map-get($color, color-third);
+                opacity: 0.6;
+                font-family: map-get($font, font-p);
+            }
+        }
+        button{
+            padding: 20px 50px;
+            background-color: $boton-backcolor;
+            color: map-get($color, color-third);
+            border-radius: 10px;
+            outline: none;
+        }
+    }
+    .footercontainer__part2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        .columna li img{
+            width: 50px;
+        }
+    }
 }

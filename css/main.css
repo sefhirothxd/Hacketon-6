@@ -264,6 +264,13 @@ img {
   padding-bottom: 20px;
 }
 
+.container-popular h3 {
+  color: #356EAD;
+  font-size: 2rem;
+  margin-bottom: 30px;
+  opacity: 0.8;
+}
+
 .container-popular__firstpost {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -286,6 +293,10 @@ img {
   padding-right: 10px;
 }
 
+.container-popular__firstpost .article__title {
+  font-size: 3.6rem;
+}
+
 .container-popular__firstpost figure {
   width: 58.33333%;
   padding-left: 10px;
@@ -302,6 +313,13 @@ img {
 
 .container-popular__seeall {
   text-align: right;
+}
+
+.container-popular__seeall a {
+  color: #356EAD;
+  font-size: 1.6rem;
+  font-weight: bold;
+  opacity: 0.8;
 }
 
 .container-list {
@@ -347,13 +365,98 @@ img {
           align-items: center;
 }
 
-.container-arrow figure {
+.container-arrow-left {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.container-arrow figure figure img {
+.container-arrow-left img {
   width: 20px;
+  margin-right: 20px;
+}
+
+.container-arrow-left p {
+  font-size: 1.6rem;
+}
+
+.container-arrow-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container-arrow-right img {
+  width: 20px;
+  margin-left: 20px;
+}
+
+.container-arrow-right p {
+  font-size: 1.6rem;
+}
+
+.footercontainer {
+  background-color: #316099;
+  border-top-right-radius: 30%;
+  width: 100%;
+}
+
+.footercontainer__part1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px 30px;
+  border-bottom: 1px solid #FFFFFF;
+}
+
+.footercontainer__part1__article h2 {
+  font-size: 3.6rem;
+  color: #FFFFFF;
+  margin-bottom: 20px;
+  font-family: Helvetica;
+  font-weight: normal;
+}
+
+.footercontainer__part1__article p {
+  font-size: 1.6rem;
+  color: #FFFFFF;
+  opacity: 0.6;
+  font-family: Arial;
+}
+
+.footercontainer__part1 button {
+  padding: 20px 50px;
+  background-color: #5A98D0;
+  color: #FFFFFF;
+  border-radius: 10px;
+  outline: none;
+}
+
+.footercontainer .footercontainer__part2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px;
+}
+
+.footercontainer .footercontainer__part2 .columna li img {
+  width: 50px;
 }
 /*# sourceMappingURL=main.css.map */
