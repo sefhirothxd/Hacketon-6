@@ -1,0 +1,22 @@
+/*header*/
+.header{
+    display: flex;
+    padding: 20px 40px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    &__nav-link ul{
+        display: flex;
+        li .home{
+            color:map-get($color, color-primary);
+            font-weight: bold;
+            font-family: map-get($font, font-title);
+        }
+        li a{
+            text-decoration: none;
+            margin-right: 20px;
+            color:map-get($color, color-secundary);
+            font-family: map-get($font, font-title);
+        }
+    }
+}

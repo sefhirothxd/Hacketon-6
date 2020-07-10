@@ -1,0 +1,95 @@
+.footercontainer{
+    background-color: $footer-backcolor;
+    border-top-right-radius: 20%;
+    width: 85%;
+    &__part1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 100px 50px;
+        border-bottom: 1px solid map-get($color, color-third);
+        &__article{
+            margin: 0 5% 0 10%;
+            h2{
+                font-size: map-get($font-size, h2);
+                color: map-get($color, color-third);
+                margin-bottom: 20px;
+                font-family: map-get($font, font-title);
+                font-weight: normal;
+            }
+            p{
+                font-size: map-get($font-size, base);
+                color: map-get($color, color-third);
+                opacity: 0.6;
+                font-family: map-get($font, font-p);
+            }
+        }
+        button{
+            margin-left: 100px;
+            padding: 20px 70px;
+            background-color: $boton-backcolor;
+            color: map-get($color, color-third);
+            border-radius: 10px;
+            outline: none;
+        }
+    }
+    &__part2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 100px 50px 20px 20%;
+        &__columna{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 0 10% 0 5%;
+            ul {
+                display: flex;
+                flex-direction: column;
+                .footer-subtitle{
+                    font-size: map-get($font-size, subtitle);
+                    font-weight: bold;
+                    margin-bottom: 50px;
+                }
+                .second-line{
+                    display: flex;
+                    align-items: center;
+                }
+                li{
+                    margin-bottom: 32px;
+                    color: map-get($color, color-third);
+                    font-size: map-get($font-size, base);
+                    span{
+                        margin-right: 20px;
+                    }
+                    a{
+                        color: inherit;
+                    }
+                }
+            }
+            .footer-list{
+                display: flex;
+                align-items: center;
+                margin-bottom: 60px;
+                .titlelist{
+                    font-size: map-get($font-size, titlelist);
+                    font-weight: normal;
+                    margin-left: 20px;
+                }
+            }
+            li img{
+                width: 50px;
+            }
+        }
+    }
+
+    .container-reseved{
+        padding: 30px 0;
+        .footer-p{
+            color: map-get($color, color-third);
+            font-size: map-get($font-size, base);
+            opacity: 0.4;
+            margin-left: 29%;
+        }
+    }
+}
