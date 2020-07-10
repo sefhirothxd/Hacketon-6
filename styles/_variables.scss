@@ -1,29 +1,18 @@
 /* Variables y mixins*/
+
+
 /*color*/
-$color : (
-    color-primary: #1F3F68,
-    color-secundary: #000000,
-    color-third: #FFFFFF,
-    color-fourth: #356EAD
-);
+
+$color: ( color-primary: #1F3F68, color-secundary: #000000, color-third: #FFFFFF, color-fourth: #356EAD);
 
 /*fondo*/
+
 $boton-backcolor: #5A98D0;
 $footer-backcolor: #316099;
 $busqueda-backcolor: #F4F4F4;
 
 /*font*/
-$font-size:(
-    base: 1.6rem,
-    h2: 3.6rem,
-    h3: 2.2rem,
-    time: 1.4rem,
-    title: 4.4rem,
-    subtitle: 2.0rem,
-    titlelist:2.8rem
-);
 
-$font:(
-    font-title: Helvetica,
-    font-p: Arial
-);
+$font-size:( base: 1.6rem, h2: 3.6rem, h3: 2.2rem, time: 1.4rem, title: 4.4rem, subtitle: 2.0rem, titlelist:2.8rem);
+$media-size:(base: 1.2rem, h2: 2.6rem, h3: 1.2rem, time: 1.0rem, title: 3.4rem, subtitle: 1.5rem, titlelist:1.8rem);
+$font:( font-title: Helvetica, font-p: Arial);

@@ -1,26 +1,50 @@
 /*banner*/
-.banner-container{
+
+.banner-container {
     position: relative;
-    &__img{
+    &__img {
         display: block;
         width: 100%;
     }
-    &__details{
+    &__details {
         position: absolute;
         text-align: center;
         bottom: 40%;
         width: 100%;
-        color:map-get($color, color-third);
-        &-title-main{
+        color: map-get($color, color-third);
+        &-title-main {
             font-size: map-get($font-size, title);
             margin-bottom: 30px;
         }
-        &-p{
+        &-p {
             font-size: map-get($font-size, subtitle);
             line-height: 30px;
             opacity: 0.7;
             letter-spacing: 0.2rem;
         }
     }
+}
 
+@media (max-width: 1450px) {
+    .banner-container__details {
+        bottom: 30%;
+        &-title-main {
+            font-size: map-get($media-size, title);
+        }
+        &-p {
+            font-size: map-get($media-size, subtitle);
+        }
+    }
+}
+
+@media (max-width: 1100px) {
+    .banner-container__details {
+        bottom: 20%;
+        &-title-main {
+            font-size: map-get($media-size, title);
+        }
+        &-p {
+            font-size: map-get($media-size, subtitle);
+        }
+    }
 }
