@@ -14,7 +14,6 @@
         color: map-get($color, color-third);
         &-title-main {
             font-size: map-get($font-size, title);
-            margin-bottom: 30px;
         }
         &-p {
             font-size: map-get($font-size, subtitle);
@@ -25,7 +24,7 @@
     }
 }
 
-@media (max-width: 1450px) {
+@include breakpoints(xg) {
     .banner-container__details {
         bottom: 30%;
         &-title-main {
@@ -37,7 +36,7 @@
     }
 }
 
-@media (max-width: 1100px) {
+@include breakpoints(s) {
     .banner-container__details {
         bottom: 20%;
         &-title-main {
@@ -45,6 +44,50 @@
         }
         &-p {
             font-size: map-get($media-size, subtitle);
+        }
+    }
+}
+
+@include breakpoints(xss) {
+    .banner-container__details {
+        bottom: 10%;
+    }
+}
+
+@include breakpoints(tablet) {
+    .banner-container__details {
+        bottom: 10%;
+        &-title-main {
+            font-size: map-get($media-size, title720);
+            margin-bottom: 10px;
+        }
+        &-p {
+            font-size: map-get($media-size, subtitle720);
+            line-height: 20px;
+        }
+    }
+}
+
+@include breakpoints(phone) {
+    .banner-container__details {
+        bottom: 20%;
+        &-title-main {
+            font-size: map-get($media-size, title525);
+            margin-bottom: 10px;
+        }
+        &-p {
+            font-size: map-get($media-size, subtitle525);
+            line-height: 10px;
+        }
+    }
+}
+
+@include breakpoints(s-phone) {
+    .banner-container__details {
+        bottom: 10%;
+        &-title-main {
+            font-size: map-get($media-size, title525);
+            margin-bottom: 5px;
         }
     }
 }

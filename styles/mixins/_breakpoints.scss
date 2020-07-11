@@ -1,0 +1,52 @@
+@mixin breakpoints($breakpoint) {
+    @if ($breakpoint==xg) {
+        @media (max-width: map-get($media-resolution, xg)) {
+            @content;
+        }
+    }
+    @if ($breakpoint==xl) {
+        @media (max-width: map-get($media-resolution, xl)) {
+            @content;
+        }
+    }
+    @if ($breakpoint==md) {
+        @media (max-width: map-get($media-resolution, md)) {
+            @content;
+        }
+    }
+    @if ($breakpoint==s) {
+        @media (max-width: map-get($media-resolution, s)) {
+            @content;
+        }
+    }
+    @if ($breakpoint==xs) {
+        @media (max-width: map-get($media-resolution, xs)) {
+            @content;
+        }
+    }
+    @if ($breakpoint==xss) {
+        @media (max-width: map-get($media-resolution, xss)) {
+            @content;
+        }
+    }
+    @if ($breakpoint==tiny) {
+        @media (max-width: map-get($media-resolution, tiny)) {
+            @content;
+        }
+    }
+    @if ($breakpoint==tablet) {
+        @media (max-width: map-get($media-resolution, tablet)) {
+            @content;
+        }
+    }
+    @if ($breakpoint==phone) {
+        @media (max-width: map-get($media-resolution, phone)) {
+            @content;
+        }
+    }
+    @if ($breakpoint==s-phone) {
+        @media (max-width: map-get($media-resolution, s-phone)) {
+            @content;
+        }
+    }
+}

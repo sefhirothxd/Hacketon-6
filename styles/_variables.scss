@@ -14,5 +14,6 @@ $busqueda-backcolor: #F4F4F4;
 /*font*/
 
 $font-size:( base: 1.6rem, h2: 3.6rem, h3: 2.2rem, time: 1.4rem, title: 4.4rem, subtitle: 2.0rem, titlelist:2.8rem);
-$media-size:(base: 1.2rem, h2: 2.6rem, h3: 1.2rem, time: 1.0rem, title: 3.4rem, subtitle: 1.5rem, titlelist:1.8rem);
+$media-size:(base: 1.2rem, h2: 2.6rem, h3: 1.2rem, time: 1.0rem, title: 3.4rem, titleh2: 2.4rem, subtitle: 1.5rem, titlelist:1.8rem, title720:2.4rem, subtitle720: 1rem, title525: 1.4rem, subtitle525: 0.8rem);
+$media-resolution:(xg: 1450px, xl: 1400px, md: 1270px, s: 1100px, xs: 1000px, xss: 915px, tiny: 750px, tablet: 720px, phone : 525px, s-phone : 400px);
 $font:( font-title: Helvetica, font-p: Arial);
